@@ -1,15 +1,13 @@
  @font-face {
 
    font-family: 'SansPro' ;
-   src: url('../fonts/SourceSansPro-Light.ttf') format('truetype');
+   src: url('../fonts/SourceSansPro-Light.ttf') ;
 
 }
 
-    * {
-      font-family: SansPro;
-    }
-
 body {
+	
+	 font-family: SansPro;
 	
 	/* Location of the image */
     background-image: url(../images/cover.jpg);
