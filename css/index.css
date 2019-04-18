@@ -1,0 +1,137 @@
+ @font-face {
+
+   font-family: 'SansPro' ;
+   src: url('../fonts/SourceSansPro-Light.ttf') ;
+
+}
+
+* { font-family: SansPro; }
+
+html {
+
+	background-color: #f5f5f5;
+}
+head {
+font-family: SansPro;	
+}
+body {
+font-family: SansPro;	
+}
+.navbar-capsule {
+	display: inline-block;
+	position: fixed;
+	height: auto;
+	min-height:80px;
+	width: 100%;
+	background-color: #635e5e;
+}
+
+.logo-capsule {
+	display: block;
+	margin-top:25px;
+	margin-left:2%;
+	color: #bbb;
+	font-size: 1.5em; 
+}
+.buttons-capsule {
+	padding-right:10%;
+	padding-left:10%;
+	display: block;
+	text-align: right;
+	color: #bbb;
+}
+
+.logoAtag {
+	color: #fff;
+	text-decoration: none;
+}
+
+.logoDiv{
+display: inline-block;
+width: 50%;
+}
+.buttonDiv{
+display: inline-block;	
+width: 50%;
+float:right;
+}
+
+.navbar-button {
+	font-size: 1.2em; 
+	margin-top:20px;
+	margin-bottom:20px;
+	height:40px;
+	border-width:1px; 
+	border-color: white;
+    background-color: transparent;
+    color: white;
+    text-align: center;
+    transition: 0.4s;	
+}
+
+.rightEdge{
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+}
+.leftEdge{
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+}
+
+/* Add a hover effect for buttons */
+.navbar-button:hover {
+    background-color:rgba(255, 255, 255, 0.3);
+}
+
+@media screen and (max-width: 600px) {
+	.logoDiv{
+		text-align:center;
+		width:100%;	
+	}
+	.buttonDiv{
+		text-align:center;
+		width:100%;
+	}
+	.buttons-capsule{
+		display: inline-block;	
+		float:center;
+	}
+}
+
+.wallpaper {
+	height: 700px;
+	background-color: #666;
+    background-image: url(../images/cover.jpg);	
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center center;
+}
+.back1 {
+	margin-right:auto;
+	margin-left:auto;
+	margin-top: -700px;
+	height: auto; 
+	width: 70%;
+	min-height: 600px;
+	background-color: transparent;	
+	  display: flex;
+      align-items: center;
+      justify-content: center;
+}
+
+.back1Inside{
+	margin-bottom:20%;
+	text-align: center;
+	margin-right:auto;
+	margin-left:auto;
+	background-color: red;	
+}
+
+.back2 {
+	margin-right:auto;
+	margin-left:auto;
+	height: auto; 
+	width: 70%;
+	min-height: 600px;
+	background-color: white;	
+}
