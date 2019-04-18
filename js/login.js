@@ -15,7 +15,7 @@ $(document).ready(function () {
                 dataType: 'JSON',
                 success: function (response) {
                     if (response === 'accept') {
-                        location.assign("index.php");
+						setTimeout(function() {location.assign("index.php");}, 1500);                        
                     } else {
                         $("#message").html("<p>" + response + "<p>");
                     }
