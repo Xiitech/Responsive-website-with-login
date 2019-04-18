@@ -1,0 +1,103 @@
+ @font-face {
+
+   font-family: 'SansPro' ;
+   src: url('../fonts/SourceSansPro-Light.ttf') format('truetype');
+
+}
+
+    * {
+      font-family: SansPro;
+    }
+
+body {
+	
+	/* Location of the image */
+    background-image: url(../images/cover.jpg);
+  
+    /* Background image is centered vertically and horizontally at all times */
+    background-position: center center;
+  
+    /* Background image doesn't tile */
+    background-repeat: no-repeat;
+  
+    /* Background image is fixed in the viewport so that it doesn't move when 
+       the content's height is greater than the image's height */
+    background-attachment: fixed;
+  
+    /* This is what makes the background image rescale based
+       on the container's size */
+    background-size: cover;
+  
+    /* Set a background color that will be displayed
+       while the background image is loading -- #635e5e same as index navbar*/
+    background-color: #635e5e;
+}
+
+	/* Manually hardcoded h2 */
+h2 {
+    font-size: 2em; 
+}
+
+	/* Manually hardcoded h2 */
+h3 {
+    font-size: 1em; 
+}
+
+    /*this is trick to center div in body*/
+.login-form-capsule {
+    width: 500px;
+    height: 500px;
+    background-color: transparent;
+
+    position:absolute; /*it can be fixed too*/
+    left:0; right:0;
+    top:0; bottom:0;
+    margin:auto;
+
+    /*this to solve "the content will not be cut when the window 
+		is smaller than the content": */
+    max-width:100%;
+    max-height:100%;
+    overflow:auto;
+}
+
+.login-form {
+	text-align: center;
+	border-radius: 0.7em;
+    background-color: #FFF;
+	margin: 2em;
+	max-width:100%;
+    max-height:100%;
+
+}
+
+input[type=text], input[type=password] {
+	width: 90%;
+    padding: 12px 20px;
+    margin: 0.3em;
+    display: inline-block;
+	border-radius: 4px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+	
+	font-weight: bolder;
+    background-color: #635e5e;
+    color: white;
+    padding: 14px 20px;
+    margin: 1.7em;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    width: 90%;
+    text-align: center;
+    transition: 0.4s;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+    opacity: 0.7;
+}
