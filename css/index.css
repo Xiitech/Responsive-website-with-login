@@ -34,8 +34,8 @@ font-family: SansPro;
 	font-size: 1.5em; 
 }
 .buttons-capsule {
-	padding-right:10%;
-	padding-left:10%;
+	margin-right:10%;
+	margin-left:10%;
 	display: block;
 	text-align: right;
 	color: #bbb;
@@ -83,25 +83,13 @@ float:right;
     background-color:rgba(255, 255, 255, 0.3);
 }
 
-@media screen and (max-width: 600px) {
-	.logoDiv{
-		text-align:center;
-		width:100%;	
-	}
-	.buttonDiv{
-		text-align:center;
-		width:100%;
-	}
-	.buttons-capsule{
-		display: inline-block;	
-		float:center;
-	}
-}
+
 
 .wallpaper {
 	height: 700px;
 	background-color: #666;
-    background-image: url(../images/cover.jpg);	
+    background-image: url(../images/cover.jpg);
+    background: linear-gradient(to bottom, rgba(0,0,0,0.1) 20%, rgba(0,0,0,0.2)), url(../images/cover.jpg);
 	background-size: cover;
 	background-attachment: fixed;
 	background-position: center center;
@@ -120,11 +108,65 @@ float:right;
 }
 
 .back1Inside{
-	margin-bottom:20%;
+	top:40%;
 	text-align: center;
 	margin-right:auto;
 	margin-left:auto;
-	background-color: red;	
+	background-color: transparent;
+    max-width: 400px;	
+}
+
+.back1H2{
+	color: #fff;
+	font-size: 2.5em; 
+	margin-bottom: 15px; 	
+}
+
+.back1H5{
+	color: #fff;
+	font-size: 1em; 
+	margin-bottom: 15px; 	
+}
+
+.back1Button1 {
+	outline:0;
+	border-width:1px; 
+	border-color: white;
+	border-radius: 4px;
+	font-size: 1.2em; 
+	padding-top:10px;
+	padding-bottom:10px;
+	padding-right:40px;
+	padding-left:40px;
+	border-width:1px; 
+	border-color: white;
+    background-color: #bbb;
+    color: #4e4c4c;
+    text-align: center;	
+}
+.back1Button1:hover {
+    background-color:#efefef;
+	color: #323131;
+}
+.back1Button2 {
+	outline:0;
+	border-width:1px; 
+	border-color: white;
+	border-radius: 4px;
+	font-size: 1.2em; 
+	padding-top:10px;
+	padding-bottom:10px;
+	padding-right:28px;
+	padding-left:28px;
+	border-width:1px; 
+	border-color: white;
+    background-color: #fff;
+    color: #323131;
+    text-align: center;
+}
+.back1Button2:hover {
+    background-color:#efefef;
+	color: #323131;
 }
 
 .back2 {
@@ -132,6 +174,263 @@ float:right;
 	margin-left:auto;
 	height: auto; 
 	width: 70%;
-	min-height: 600px;
+	min-height: 300px;
 	background-color: white;	
+	margin-bottom: 30px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;	
+}
+.back2Text{
+	margin-right:auto;
+	margin-left:auto;
+	max-width:60%;
+	color: #786F6F;
+	line-height: 1.5em;
+	font-size: 2em; 
+	padding-top: 50px; 
+	padding-bottom: 50px; 
+	border-bottom-style: solid;
+  border-bottom-color: #bbb;
+  border-bottom-width: 1px;
+}
+
+.back2TextSmall{
+	margin-right:auto;
+	margin-left:auto;
+	max-width:60%;
+	color: #786F6F;
+	font-size: 1em; 
+	padding-top: 50px; 
+	padding-bottom: 50px; 
+}
+
+.back2Image{
+	height: auto;
+	width: 100%;
+}
+
+
+.back3 {
+	margin-right:auto;
+	margin-left:auto;
+	height: auto; 
+	width: 70%;
+	min-height: 400px;
+	background-color: #fff;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	margin-bottom: 30px;
+}
+
+.back3Margin{
+	margin-right:auto;
+	margin-left:auto;
+	background-color: #fff;
+	min-height: 200px;
+	width: 95%;
+}
+.marginFirst{
+		border-bottom-style: solid;
+  border-bottom-color: #bbb;
+  border-bottom-width: 1px;
+}
+.back3Div{
+	display: inline-block;
+	min-height: 200px;
+	width: 49.5%;
+	background-color: #fff;
+}
+.marginFirstRight{
+  border-right-style: solid;
+  border-right-color: #bbb;
+  border-right-width: 1px;
+}
+
+.pasus{
+	margin:10px;
+	text-align:center;
+}
+
+.pasusImage{
+	margin:10px;
+	text-align:center;
+	transition: transform .2s; 
+}
+.pasusImage:hover {
+  transform: scale(1.1); 
+}
+
+.pasusTittle{ 
+
+	color: #786F6F;
+	font-size: 1.5em; 
+	margin-top: 25px; 
+	margin-bottom: 25px;
+}
+.pasusText{ 
+    margin-right:auto;
+	margin-left:auto;
+	color: #786F6F;
+	font-size: 0.9em; 
+	line-height: 1.5em;
+}
+
+.back4 {
+	overflow:auto; 
+	margin-right:auto;
+	margin-left:auto;
+	height: auto; 
+	width: 70%;
+	min-height: 300px;
+	background-color: white;
+	margin-bottom: 30px;	
+	text-align:center;
+}
+
+.back4LeftDiv {
+	float: left;
+	min-height: 300px;
+	height: auto; 
+	width: 48%;
+	background-color: #fff;	
+}
+
+.back4RightDiv {
+	float: right;
+	min-height: 300px;
+	height: auto; 
+	width: 48%;
+	background-color: #fff;	
+}
+
+.back4Image1 {
+	height: auto;
+	width: 100%;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+	transition: 0.3s; 	
+}
+.back4Image1:hover {
+  	-webkit-filter: grayscale(0%); 
+    filter: grayscale(0%); 
+}
+
+.back4Image2 {
+	height: auto;
+	width: 100%;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+	transition: 0.3s; 	
+}
+.back4Image2:hover {
+  	-webkit-filter: grayscale(0%); 
+    filter: grayscale(0%); 
+}
+
+.back4Tittle{
+	text-align:center;
+	color: #786F6F;
+	font-size: 1.5em; 
+	margin-top: 25px; 
+	margin-bottom: 25px;
+}
+
+.back4Text{ 
+	text-align:center;
+    margin-right:auto;
+	margin-left:auto;
+	color: #786F6F;
+	font-size: 0.9em; 
+	line-height: 1.5em;
+}
+
+.back4Button {
+	outline:0;
+	border-width:1px; 
+	border-color: white;
+	border-radius: 4px;
+	font-size: 1.2em; 
+	padding-top:10px;
+	padding-bottom:10px;
+	padding-right:40px;
+	padding-left:40px;
+	border-width:1px; 
+	border-color: white;
+    background-color: #bbb;
+    color: #4e4c4c;
+    float: center;
+}
+.back4Button1:hover {
+    background-color:#efefef;
+	color: #323131;
+}
+
+.footer {
+	padding-top: 20px; 
+	margin-right:auto;
+	margin-left:auto;
+	height: auto; 
+	width: 100%;
+	background-color: #D8D8D8;
+	text-align:center;
+}
+.footerText{
+	color: #786F6F;
+	font-size: 1em; 
+	padding-bottom: 20px; 	
+}
+.footerIcons{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px; 
+	padding-top: 10px; 	
+}
+.footerIcons:hover {
+    opacity:0.5;
+}
+
+@media screen and (max-width: 600px) {
+	.back3Div{
+		width: 100%;
+	}
+	.marginFirstRight{
+	border-right-width: 0px;
+	border-bottom-style: solid;
+	border-bottom-color: #bbb;
+	border-bottom-width: 1px;
+	}
+}
+@media screen and (max-width: 600px) {
+	.logoDiv{
+		text-align:center;
+		width:100%;	
+	}
+	.buttonDiv{
+		text-align:center;
+		width:100%;
+	}
+	.buttons-capsule{
+		display: inline-block;	
+		float:center;
+	}
+	.back2 {
+	margin-top: 5%; 	
+	width: 95%;
+	}
+	.back1 {
+	margin-top: -600px;
+	}
+	.back3 {
+	width: 95%;
+	}
+	.back4 {
+	width: 95%;
+	}
+	.back4LeftDiv {
+	width: 100%;
+	}
+	.back4RightDiv {
+	width: 100%;
+	}
 }
