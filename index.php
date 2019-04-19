@@ -1,3 +1,5 @@
+<!-- Author: Mateja Radojicic - Test example for internship -->
+
 <?php
 //Remove this php part of code if you wanna fast preview without login
 session_start();
