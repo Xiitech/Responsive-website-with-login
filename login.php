@@ -20,6 +20,7 @@ session_start();
     <form name="form1" >
     <br><h2>Login</h2><br>
     <br><h3 >Please sign in</h3><br>
+	<br><h3 >email: mateja@xiitech.org <br> pass: 1234</h3><br>
         <input name="myemail" id="myemail" type="text" placeholder="Email" autofocus>
         <input name="mypassword" id="mypassword" type="password" placeholder="Password">
         <!-- The checkbox remember me is not implemented yet...
