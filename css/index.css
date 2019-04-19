@@ -317,7 +317,6 @@ float:right;
 }
 
 .back4Image2 {
-	z-index:1;
 	height: auto;
 	width: 100%;
   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
