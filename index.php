@@ -1,9 +1,9 @@
 <?php
 //Remove this php part of code if you wanna fast preview without login
-//session_start();
-//if (!isset($_SESSION['email'])) {
-//    header("location:login.php");
-//}
+session_start();
+if (!isset($_SESSION['email'])) {
+    header("location:login.php");
+}
 ?>
 
 <!DOCTYPE html>
